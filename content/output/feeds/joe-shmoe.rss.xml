@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>A Pelican Blog - Joe Shmoe</title><link>/</link><description></description><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><item><title>My First Pelican Post!</title><link>/my-first-pelican-post.html</link><description>&lt;h1&gt;This is my first H1 heading!&lt;/h1&gt;
+&lt;p&gt;This is my first paragraph!&lt;/p&gt;
+&lt;h2&gt;This is my first H2 heading!&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This &lt;/li&gt;
+&lt;li&gt;is &lt;/li&gt;
+&lt;li&gt;my&lt;/li&gt;
+&lt;li&gt;first&lt;/li&gt;
+&lt;li&gt;unordered&lt;/li&gt;
+&lt;li&gt;list!&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe Shmoe</dc:creator><pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2020-09-01:/my-first-pelican-post.html</guid><category>misc</category></item></channel></rss>
