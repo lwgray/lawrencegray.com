@@ -206,6 +206,7 @@
   .teach-grid .item { border-top: 2px solid var(--gold); padding-top: 18px; }
   .teach-grid h3 { font-size: 1.2rem; margin-bottom: 10px; }
   .teach-grid p { color: var(--fg-dim); font-size: 0.97rem; }
+  .teach-note { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--fg-dim); font-size: 0.97rem; max-width: 40em; }
   @media (max-width: 760px) {
     .teach-grid { grid-template-columns: 1fr; gap: 32px; }
   }
@@ -330,7 +331,7 @@
     <div class="wrap">
       <h2>Why this matters to me</h2>
       <div class="prose">
-        <p>In my mid-twenties I was a PhD student at Johns Hopkins, doing research I believed would win a Nobel Prize. Then my grandmother died, and grief turned into a depression that did not lift. At thirty I was diagnosed bipolar. For years I could barely read or write. I finished my dissertation by speaking it aloud, one slow sentence at a time, while my wife typed.</p>
+        <p>In my mid-twenties I was a PhD student at Johns Hopkins, doing research I believed could treat a rare disease. Then my grandmother died, and grief turned into a depression that did not lift. At thirty I was diagnosed bipolar. For years I could barely read or write. I finished my dissertation by speaking it aloud, one slow sentence at a time, while my wife typed.</p>
         <p>What pulled me back, alongside medication and the patience of the people around me, was Python. Not the syntax, the shape of it: take a problem apart until each piece is small enough to hold, solve the piece, build back up. That is decomposition, the same move at the top of this page, and for a long time it was the only thing my mind could still do. It was not a cure and it was never a substitute for treatment, but it was the first thing that worked. I still teach it like it once saved someone's life, because it saved mine. I say this out loud because most people in technical careers still cannot, and I would rather be one more who does. The longer version is in <a class="inline" href="https://medium.com/@larrygray/how-python-helped-me-relearn-to-think-and-transformed-my-life-b7dc17e7361b">an essay I wrote about it</a>, in my PyData NYC keynote, and in interviews.</p>
       </div>
     </div>
@@ -341,8 +342,8 @@
       <h2>What I build</h2>
       <div class="work-lead">
         <h3>Marcus</h3>
-        <p>An open-source server for coordinating multiple AI agents without having them talk to each other. Two agents in conversation works fine. At three they start arguing, at four they second-guess each other, and by five they burn through their context windows and get measurably worse. That is not an intelligence problem, it is an organizational design problem, so Marcus replaces the conversation with a Kanban board: every task carries everything an agent needs to know, and agents pull work off the board instead of negotiating over it. I organized a sprint for it at PyCon, with a hosted endpoint and printed guides so people could start contributing in an afternoon.</p>
-        <p class="meta"><a class="inline" href="https://github.com/painted-porch/marcus">See the code on GitHub</a></p>
+        <p>An open-source server for coordinating multiple AI agents without having them talk to each other. Two agents in conversation works fine. At three they start arguing, at four they second-guess each other, and by five they burn through their context windows and get measurably worse. That is not an intelligence problem, it is an organizational design problem, so Marcus replaces the conversation with a Kanban board: every task carries everything an agent needs to know, and agents pull work off the board instead of negotiating over it. To test the idea on its own, I stripped it down to marcus-mini, three moving parts in plain Python, and benchmarked it against AutoGen and LangGraph on the same task graphs with the same model: three times faster at nine tasks, seven times faster at twenty-seven, with the gap widening as the project grows. I organized a sprint for Marcus at PyCon, with a hosted endpoint and printed guides so people could start contributing in an afternoon.</p>
+        <p class="meta"><a class="inline" href="https://github.com/painted-porch/marcus">Marcus on GitHub</a> &nbsp; <a class="inline" href="https://github.com/lwgray/marcus-mini">marcus-mini and the benchmark</a></p>
       </div>
       <div class="work-grid">
         <div class="item">
@@ -376,6 +377,7 @@
           <p>Senior ML Educator. Runs a cohort program for working engineers and is tech lead on projects that mix teaching with production machine learning. Built Course Master, a curriculum-design method now being adopted company-wide.</p>
         </div>
       </div>
+      <p class="teach-note">Free teaching material lives in the <a class="inline" href="https://lwgray.github.io/python-teaching-toolkit">Python Teaching Toolkit</a>, including the short guide to when Python wants parentheses, brackets, or braces that beginners ask about most.</p>
     </div>
   </section>
 
