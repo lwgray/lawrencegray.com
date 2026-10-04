@@ -278,7 +278,7 @@
   /* Marcus: text beside a figure */
   .work-split { display: block; }
   .work-text { max-width: 42em; }
-  .work-figure { margin: 36px 0 0; }
+  .work-figure { margin: 36px 0 0; max-width: 820px; }
   .work-figure figcaption { font-size: 0.9rem; color: var(--fg-dim); margin-top: 12px; max-width: 48em; }
   @media (max-width: 860px) { .work-split { grid-template-columns: 1fr; gap: 28px; } }
 
@@ -430,8 +430,8 @@
           <figcaption>Decompose: the dependency graph Marcus built for the same project before any agent started. Two foundation tasks, five that can run in parallel, one integration gate, one write-up at the end. Every node is green at 100 percent except the README, which was still being written.</figcaption>
         </figure>
         <figure class="work-figure">
-          <a href="img/cato-board.jpg" aria-label="Open this screenshot at full size"><img src="img/cato-board.jpg" alt="Cato, the Marcus visualization layer, showing the Kanban board for a snake game project: two tasks in backlog, four in progress, none blocked, seven done, with the agent and minutes recorded on each card" width="2000" height="1133" loading="lazy" decoding="async"></a>
-          <figcaption>Coordinate: the same project on the board, eighteen minutes in. 13 tasks, four agents working in parallel, nothing in the blocked column, and not one message between them. Every card names the agent that holds it and how long it has had it.</figcaption>
+          <a href="img/cato-board.jpg" aria-label="Open this screenshot at full size"><img src="img/cato-board.jpg" alt="Cato board for the snake game project showing the In Progress, Blocked, and Done columns: four tasks in progress, none blocked, seven done, each card naming its agent and elapsed minutes" width="1800" height="1364" loading="lazy" decoding="async"></a>
+          <figcaption>Coordinate: the same project on the board, eighteen minutes in. Four agents working in parallel, seven tasks done, nothing blocked, two more waiting in a backlog column out of frame, and not one message between them. Every card names the agent that holds it and how long it has had it.</figcaption>
         </figure>
         </div>
       </div>
