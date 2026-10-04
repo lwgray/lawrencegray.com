@@ -103,8 +103,8 @@
   .nav .links a:hover, .nav .links a.active { color: var(--chalk); border-color: var(--gold); }
 
   section { padding: 88px 0; }
-  .on-dark { background: var(--graphite); color: var(--chalk); --fg: var(--chalk); --fg-dim: var(--chalk-dim); --rule: rgba(242,239,230,0.22); --accent-text: #cfa05a; }
-  .on-light { background: var(--paper); color: var(--ink); --fg: var(--ink); --fg-dim: var(--ink-dim); --rule: rgba(35,38,31,0.18); --accent-text: #7a5a1f; }
+  .on-dark { background: var(--graphite); color: var(--chalk); --fg: var(--chalk); --fg-dim: var(--chalk-dim); --rule: rgba(242,239,230,0.22); --accent-text: #dcb26a; }
+  .on-light { background: var(--paper); color: var(--ink); --fg: var(--ink); --fg-dim: var(--ink-dim); --rule: rgba(35,38,31,0.18); --accent-text: #5e4515; }
   .on-dark .dim { color: var(--chalk-dim); }
   .on-light .dim { color: var(--ink-dim); }
   .on-dark a.inline { color: var(--chalk); border-bottom: 1px solid var(--gold); }
@@ -238,6 +238,12 @@
   .essay-list .note { display: block; font-size: 0.9rem; color: var(--fg-dim); margin-top: 3px; }
 
   /* contact */
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; margin: 28px 0 8px; }
+  .btn { display: inline-block; background: var(--gold); color: var(--graphite); font-weight: 600; text-decoration: none; padding: 14px 22px; border-radius: 4px; border: 1px solid var(--gold); transition: background 0.15s ease, border-color 0.15s ease; }
+  .btn:hover { background: #d6aa63; border-color: #d6aa63; }
+  .btn:focus-visible { outline: 2px solid var(--chalk); outline-offset: 3px; }
+  .cta-row .alt { color: var(--fg-dim); font-size: 0.95rem; }
+  .cta-row .alt a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--gold); }
   .contact-list { margin: 36px 0 0; max-width: 46em; }
   .contact-list .row { display: grid; grid-template-columns: 7em 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--rule); }
   .contact-list .row:last-child { border-bottom: 1px solid var(--rule); }
@@ -367,7 +373,7 @@
       </div>
       </div>
       <div class="hero-photo hero-anim d2">
-        <img src="img/headshot.jpg" alt="Lawrence Gray, smiling, in a gray suit and blue tie" width="880" height="1100">
+        <img src="img/headshot.jpg" alt="Lawrence Gray, smiling, in a gray suit and blue tie" width="880" height="1100" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -530,9 +536,14 @@
   <section id="contact" class="on-dark eyebrow-free">
     <div class="wrap">
       <h2>Talk to me</h2>
-      <p class="talks-lead">For speaking invitations, questions about Marcus, or just to say hello.</p>
+      <p class="talks-lead">For speaking invitations, questions about Marcus, or just to say hello. The fastest route is a slot on my calendar.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://calendar.app.google/1mh1yCVaCuGHqX9d7">Book time on my calendar</a>
+        <span class="alt">Or email about <a href="mailto:lwgray@gmail.com?subject=Speaking%20invitation">a talk</a>, <a href="mailto:lwgray@gmail.com?subject=Marcus">Marcus</a>, or <a href="mailto:lwgray@gmail.com?subject=Hello">anything else</a>.</span>
+      </div>
       <dl class="contact-list">
-        <div class="row"><dt>LinkedIn</dt><dd><a class="inline" href="https://www.linkedin.com/in/larry-gray-phd">linkedin.com/in/larry-gray-phd</a><span>The most reliable way to reach me.</span></dd></div>
+        <div class="row"><dt>Calendar</dt><dd><a class="inline" href="https://calendar.app.google/1mh1yCVaCuGHqX9d7">calendar.app.google</a><span>Pick a time that works; no back and forth.</span></dd></div>
+        <div class="row"><dt>LinkedIn</dt><dd><a class="inline" href="https://www.linkedin.com/in/larry-gray-phd">linkedin.com/in/larry-gray-phd</a><span>Where I post and reply most.</span></dd></div>
         <div class="row"><dt>Email</dt><dd><a class="inline" href="mailto:lwgray@gmail.com">lwgray@gmail.com</a><span>If you would rather write.</span></dd></div>
         <div class="row"><dt>GitHub</dt><dd><a class="inline" href="https://github.com/painted-porch/marcus">github.com/painted-porch/marcus</a><span>Marcus, and the rest of the open-source work.</span></dd></div>
       </dl>
